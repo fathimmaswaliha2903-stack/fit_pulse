@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Workout Plans</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>FitPulse</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#plans">Plans</a>
+            <a href="#exercises">Exercises</a>
+            <a href="#tips">Tips</a>
+        </div>
+    </nav>
+
+
+    <section id="home" class="hero">
+
+        <p>TRAIN SMART • STAY CONSISTENT</p>
+
+        <h1>
+            Find a workout plan
+            that fits your goals.
+        </h1>
+
+        <p>
+            Simple workout plans for beginners,
+            strength training and fitness.
+        </p>
+
+        <a href="#plans" class="button">
+            Explore Plans
+        </a>
+
+    </section>
+
+
+    <section id="plans">
+
+        <h2>Workout Plans</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>3-Day Beginner</h3>
+
+                <p>
+                    A simple plan for beginners.
+                </p>
+
+                <ul>
+                    <li>3 days per week</li>
+                    <li>30–45 minutes</li>
+                    <li>Full-body training</li>
+                </ul>
+
+                <button onclick="showPlan('beginner')">
+                    View Plan
+                </button>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>4-Day Strength</h3>
+
+                <p>
+                    Build strength with a
+                    balanced weekly routine.
+                </p>
+
+                <ul>
+                    <li>4 days per week</li>
+                    <li>45–60 minutes</li>
+                    <li>Upper/lower split</li>
+                </ul>
+
+                <button onclick="showPlan('strength')">
+                    View Plan
+                </button>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>5-Day Fitness</h3>
+
+                <p>
+                    Combine strength, cardio
+                    and mobility.
+                </p>
+
+                <ul>
+                    <li>5 days per week</li>
+                    <li>30–60 minutes</li>
+                    <li>Strength + cardio</li>
+                </ul>
+
+                <button onclick="showPlan('fitness')">
+                    View Plan
+                </button>
+
+            </div>
+
+        </div>
+
+        <div id="result">
+            Select a plan to see the schedule.
+        </div>
+
+    </section>
+
+
+    <section id="exercises">
+
+        <h2>Exercises</h2>
+
+        <div class="exercise-list">
+
+            <div>
+                <h3>Squats</h3>
+                <p>Legs & Glutes</p>
+            </div>
+
+            <div>
+                <h3>Push-ups</h3>
+                <p>Chest & Arms</p>
+            </div>
+
+            <div>
+                <h3>Plank</h3>
+                <p>Core</p>
+            </div>
+
+            <div>
+                <h3>Lunges</h3>
+                <p>Legs & Balance</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="tips">
+
+        <h2>Fitness Tips</h2>
+
+        <div class="tips">
+
+            <div>
+                <h3>Warm Up</h3>
+                <p>
+                    Prepare your body before exercise.
+                </p>
+            </div>
+
+            <div>
+                <h3>Progress Gradually</h3>
+                <p>
+                    Increase your training gradually.
+                </p>
+            </div>
+
+            <div>
+                <h3>Recover</h3>
+                <p>
+                    Give your body enough rest.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 FitPlan
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

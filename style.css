@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #172033;
+    background: #ffffff;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background: white;
+
+    position: sticky;
+    top: 0;
+}
+
+nav h2 {
+    font-size: 25px;
+}
+
+nav a {
+    margin-left: 25px;
+
+    text-decoration: none;
+
+    color: #333;
+
+    font-weight: bold;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 600px;
+
+    padding: 100px 10%;
+
+    background: #eaf2ff;
+}
+
+.hero p:first-child {
+    color: #2563eb;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 60px;
+
+    max-width: 700px;
+
+    margin: 20px 0;
+}
+
+.hero p {
+    font-size: 18px;
+
+    max-width: 600px;
+
+    margin-bottom: 30px;
+}
+
+
+/* Button */
+
+.button,
+button {
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 22px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+/* Sections */
+
+section {
+    padding: 80px 10%;
+}
+
+section h2 {
+    font-size: 40px;
+
+    margin-bottom: 30px;
+}
+
+
+/* Workout cards */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    padding: 30px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #667085;
+
+    margin-bottom: 15px;
+}
+
+.card ul {
+    margin-bottom: 20px;
+
+    padding-left: 20px;
+}
+
+.card li {
+    margin-bottom: 7px;
+}
+
+
+/* Result */
+
+#result {
+    margin-top: 30px;
+
+    padding: 25px;
+
+    background: #eef4ff;
+
+    border-radius: 10px;
+}
+
+
+/* Exercises */
+
+.exercise-list {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.exercise-list div {
+    padding: 25px;
+
+    background: #f5f7fa;
+
+    border-radius: 10px;
+}
+
+
+/* Tips */
+
+.tips {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.tips div {
+    padding: 25px;
+
+    background: #f5f7fa;
+
+    border-radius: 10px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    background: #172033;
+
+    color: white;
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .cards,
+    .exercise-list,
+    .tips {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+}
